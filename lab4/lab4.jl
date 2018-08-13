@@ -24,7 +24,7 @@ function dataframe_into_cvs(exp_id :: String, df :: DataFrame)
     CSV.write(string(exp_id, ".csv"), df)
 end
 
-# Wykonać serię eksperymentów dla różnych parametrów modelu L-V i wykonać analizę danych (6 pkt):
+# Wykonać serię eksperymentów dla różnych par4ametrów modelu L-V i wykonać analizę danych (6 pkt):
 #    Należy wykonać co najmniej 4 eksperymenty dla różnych kombinacji parametrów.
 function series_of_experiments(n :: Int64)
     rng = RandomDevice()
@@ -68,4 +68,4 @@ function lab4_task(n :: Int64)
     draw(PNG("population_over_time.png", 30cm, 30cm), p)
 end
 
-lab4_task(4)
+lab4_task(4)    
